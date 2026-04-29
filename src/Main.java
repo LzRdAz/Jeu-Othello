@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        boolean continuer = false;
+        int saisie;
+        while (!continuer){
+            System.out.println("Projet de SAE:");
+            System.out.println(
+              "                                    ███████    ███████████ █████   █████ ██████████ █████       █████          ███████\n" +
+              "                                   ███▒▒▒▒▒███ ▒█▒▒▒███▒▒▒█▒▒███   ▒▒███ ▒▒███▒▒▒▒▒█▒▒███       ▒▒███         ███▒▒▒▒▒███ \n" +
+              "                                  ███     ▒▒███▒   ▒███  ▒  ▒███    ▒███  ▒███  █ ▒  ▒███        ▒███        ███     ▒▒███\n" +
+              "                                 ▒███      ▒███    ▒███     ▒███████████  ▒██████    ▒███        ▒███       ▒███      ▒███\n" +
+              "                                 ▒███      ▒███    ▒███     ▒███▒▒▒▒▒███  ▒███▒▒█    ▒███        ▒███       ▒███      ▒███\n" +
+              "                                 ▒▒███     ███     ▒███     ▒███    ▒███  ▒███ ▒   █ ▒███      █ ▒███      █▒▒███     ███ \n" +
+              "                                 ▒▒▒███████▒      █████    █████   █████ ██████████ ███████████ ███████████ ▒▒▒███████▒  \n" +
+              "                                   ▒▒▒▒▒▒▒       ▒▒▒▒▒    ▒▒▒▒▒   ▒▒▒▒▒ ▒▒▒▒▒▒▒▒▒▒ ▒▒▒▒▒▒▒▒▒▒▒ ▒▒▒▒▒▒▒▒▒▒▒    ▒▒▒▒▒▒▒\n"
+            );
+
+            System.out.println("Bienvenu dans le OTHELLO de Raphaël et Hamza");
+            System.out.print("Appuyer sur 1 pour continuer:");
+            saisie = sc.nextInt();
+            if (saisie == 1) {
+                continuer = true;
+            }
+            else {
+                continuer = false;
+                System.out.println("Dommage! Vous ne voulez pas jouer.");
+            }
+        }
+        Menu.afficherMenuPrincipal();
+    }
+}
